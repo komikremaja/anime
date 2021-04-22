@@ -11,7 +11,7 @@ function CloseTransition(){
     }
 }
 
-const searchButton = document.getElementById('Search-Bar');
+const searchButton = document.getElementById('searchInputDiv');
 function searchTransition(){
     if(menuOpen === false){
         searchButton.classList.add('search-trans');
@@ -21,4 +21,3 @@ function searchTransition(){
         menuOpen=false;
     }
 }
-
