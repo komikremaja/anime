@@ -1,159 +1,141 @@
 <html>
+    <head>
+        <title>AnimeSesshu, Streaming dan Download Anime Sub Indo HD!!!</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        <link rel="stylesheet" href="../CSS/HomePage.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    </head>
 
-<head>
-    <title>AnimeSesshu, Streaming dan Download Anime Sub Indo HD!!!</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
-        integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
-        integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous">
-    </script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
-        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-    <link rel="stylesheet" href="../CSS/HomePage.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
+    <body>
+        <header>
+            <div class="Template-Header">
+                <div class="Menu-Btn" id="Menu-Hamburger" onclick="CloseTransition(), slideTransition()">
+                    <div class="Hamburger-Btn">
+                    </div>
+                </div>
+                <div class="Layout-Logo">
+                        <a href="AnimeSesshu.Html"><img src="../Gambar/Logo.png" alt="LogoAnimeSesshu" class="Logo-Gambar"></a>
+                </div>
+                <div class="Layout-Search" id="searchInputDiv">
+                    <div class="Layout-Icon-Back" onclick="searchClose()">
+                        <i class="fa fa-arrow-left Icon-Back"></i>
+                    </div>
+                    <div class="Search-Menu">
+                        <input type="text" name="search" placeholder="Search Anime" class="Search-Input">
+                    </div>
+                </div>
 
-<body>
-
-    <header>
-        <div class="Template-Header">
-            <div class="Menu-Btn" id="Menu-Hamburger" onclick="CloseTransition(), slideTransition()">
-                <div class="Hamburger-Btn">
+                <div class="Layout-Icon-Search" onclick="searchOpen()" id="Icon-Search">
+                    <i class="fa fa-search Icon-Search"></i>
                 </div>
             </div>
-            <div class="Layout-Logo">
-                <a href="AnimeSesshu.Html"><img src="../Gambar/Logo.png" alt="LogoAnimeSesshu" class="Logo-Gambar"></a>
+            <div class="seperate-main">
+                
             </div>
-            <div class="Layout-Search" id="searchInputDiv">
-                <div class="Layout-Icon-Back" onclick="searchClose()">
-                    <i class="fa fa-arrow-left Icon-Back"></i>
+        </header>
+        <!-- Main Content -->
+        <main onclick="bodyCloseTransition(), MainCloseTransition()">
+            <section class="Layout-AnimePopuler">
+                <div class="Layout-Text-AnimePopuler">
+                    <div class="Text-AnimePopuler">
+                        Anime Populer Terbaru
+                    </div>
                 </div>
-                <div class="Search-Menu">
-                    <input type="text" name="search" placeholder="Search Anime" class="Search-Input">
+            </section>
+        </main>
+        <!-- ---------------------- -->
+        <section class="Sidebar" id= "slidebar">
+            <div class="Layout-Slidebar">
+                <!-- Halaman 1-->
+                <a href="#" class="focus-HalamanUtama HalamanUtama-Focus">
+                    <div class="Layout-Halaman Space-Halaman">
+                        <div class="Layout-Icon-Halaman">
+                            <svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 16 16" class="">
+                                <path id="home" d="M0,8,8,0l8,8v8H11V10H5v6H0Z" fill-rule="evenodd"/>
+                            </svg>
+                        </div>
+                        <div class="Layout-TextHalaman Text-HalamanUtama-Focus">
+                            <div>Halaman Utama</div>
+                        </div>
+                    </div>
+                </a>
+                <!-- Halaman 2-->
+                <div class="Layout-Halaman Space-Halaman">
+                    <div class="Layout-Icon-Halaman">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-list-ul Icon-Halaman" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                          </svg>
+                    </div>
+                    <div class="Layout-TextHalaman">
+                        <div>Daftar Anime</div>
+                    </div>
                 </div>
-            </div>
-
-            <div class="Layout-Icon-Search" onclick="searchOpen()" id="Icon-Search">
-                <i class="fa fa-search Icon-Search"></i>
-            </div>
-        </div>
-        <div class="seperate-main">
-
-        </div>
-    </header>
-
-    <section class="Sidebar" id="slidebar">
-        <div class="Layout-Slidebar">
-            <!-- Halaman 1-->
-            <div class="Layout-Halaman Space-Halaman">
-                <div class="Layout-Icon-Halaman">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="Icon-Halaman">
-                        <path id="home" d="M0,8,8,0l8,8v8H11V10H5v6H0Z" fill-rule="evenodd" />
-                    </svg>
+                <!-- Halaman 3-->
+                <div class="Layout-Halaman Space-Halaman">
+                    <div class="Layout-Icon-Halaman">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-calendar-date Icon-Halaman" viewBox="0 0 16 16">
+                            <path d="M6.445 11.688V6.354h-.633A12.6 12.6 0 0 0 4.5 7.16v.695c.375-.257.969-.62 1.258-.777h.012v4.61h.675zm1.188-1.305c.047.64.594 1.406 1.703 1.406 1.258 0 2-1.066 2-2.871 0-1.934-.781-2.668-1.953-2.668-.926 0-1.797.672-1.797 1.809 0 1.16.824 1.77 1.676 1.77.746 0 1.23-.376 1.383-.79h.027c-.004 1.316-.461 2.164-1.305 2.164-.664 0-1.008-.45-1.05-.82h-.684zm2.953-2.317c0 .696-.559 1.18-1.184 1.18-.601 0-1.144-.383-1.144-1.2 0-.823.582-1.21 1.168-1.21.633 0 1.16.398 1.16 1.23z"/>
+                            <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                          </svg> 
+                    </div>
+                    <div class="Layout-TextHalaman">
+                        <div>Jadwal Tayang</div>
+                    </div>
                 </div>
-                <div class="Layout-TextHalaman">
-                    <div>Halaman Utama</div>
+                 <!-- Halaman 4-->
+                <div class="Layout-Halaman Space-Halaman">
+                    <div class="Layout-Icon-Halaman">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="Icon-halaman" viewBox="0 0 16 16">
+                            <g id="cinema" transform="translate(0.005 -0.416)">
+                              <path id="Path_3218" data-name="Path 3218" d="M14.981,1.014,14.723.95a18,18,0,0,0-8.706,0l-.258.064a1.338,1.338,0,0,0-1.015,1.3V4.181A18.021,18.021,0,0,0,.919,5.759l-.234.129A1.336,1.336,0,0,0,.042,7.406l.78,2.917A8.312,8.312,0,0,0,6,15.978l.8.295a2.422,2.422,0,0,0,2.672-.718l.549-.656a8.159,8.159,0,0,0,1.245-2.017,2.389,2.389,0,0,0,.48-.252l.7-.491A8.318,8.318,0,0,0,16,5.332V2.315a1.338,1.338,0,0,0-1.014-1.3ZM9.618,14.554l-.549.656a1.884,1.884,0,0,1-2.079.558l-.8-.295a7.777,7.777,0,0,1-4.848-5.291L.559,7.267a.8.8,0,0,1,.385-.909l.234-.129a17.49,17.49,0,0,1,3.567-1.49v.593a8.317,8.317,0,0,0,2.849,6.261,5.061,5.061,0,0,1-1.475.355L4.1,12.111a.268.268,0,0,0-.089.512l2.67,1.206a1.339,1.339,0,0,0,1.641-.439l.584-.813.076.054a2.409,2.409,0,0,0,1.383.434c.08,0,.158-.01.237-.018a7.651,7.651,0,0,1-.989,1.508Zm-1.552-2.58c.073.054.144.112.22.164l.185.13-.581.809a.8.8,0,0,1-.985.263l-1.724-.777.98-.08a5.607,5.607,0,0,0,1.9-.507ZM15.46,5.332A7.781,7.781,0,0,1,12.146,11.7l-.7.491a1.881,1.881,0,0,1-2.151,0l-.7-.491A7.781,7.781,0,0,1,5.28,5.332V2.315a.8.8,0,0,1,.609-.78l.258-.065a17.462,17.462,0,0,1,8.446,0l.258.065a.8.8,0,0,1,.609.78Zm0,0" transform="translate(0)"/>
+                              <path id="Path_3219" data-name="Path 3219" d="M202.855,120.352l.365-.392a2.145,2.145,0,0,0-3.031,0l-.013.013.392.366a1.606,1.606,0,0,1,2.287.013Zm0,0" transform="translate(-193.478 -114.932)"/>
+                              <path id="Path_3220" data-name="Path 3220" d="M328.189,119.959l-.013.013.392.366a1.606,1.606,0,0,1,2.287.013l.365-.392A2.145,2.145,0,0,0,328.189,119.959Zm0,0" transform="translate(-317.191 -114.932)"/>
+                              <path id="Path_3221" data-name="Path 3221" d="M72.242,248.643a1.606,1.606,0,0,1,1.238.171l.25-.475a2.142,2.142,0,0,0-2.927.785l-.009.016.232.134.241.117A1.6,1.6,0,0,1,72.242,248.643Zm0,0" transform="translate(-68.427 -239.339)"/>
+                              <path id="Path_3222" data-name="Path 3222" d="M219.936,224.09l-1.988.362a5.071,5.071,0,0,1-1.822,0l-1.988-.362a.268.268,0,0,0-.218.471l2.268,1.856a1.343,1.343,0,0,0,1.7,0l2.268-1.857a.268.268,0,0,0-.218-.471ZM217.546,226a.8.8,0,0,1-1.018,0l-1.466-1.2.969.176a5.591,5.591,0,0,0,2.012,0l.969-.176Zm0,0" transform="translate(-206.668 -216.175)"/>
+                            </g>
+                          </svg>
+                    </div>
+                    <div class="Layout-TextHalaman">
+                        <div>Genres</div>
+                    </div>
                 </div>
-            </div>
-            <!-- Halaman 2-->
-            <div class="Layout-Halaman Space-Halaman">
-                <div class="Layout-Icon-Halaman">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-list-ul Icon-Halaman" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
-                    </svg>
+                <!-- Halaman 5-->
+                <div class="Layout-Halaman Space-Halaman">
+                    <div class="Layout-Icon-Halaman">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="Icon-Halaman" viewBox="0 0 16 16">
+                            <g id="camera-reels" opacity="0.5">
+                              <path id="Path_3223" data-name="Path 3223" d="M6,3A3,3,0,1,1,3,0,3,3,0,0,1,6,3ZM1,3A2,2,0,1,0,3,1,2,2,0,0,0,1,3Z"/>
+                              <path id="Path_3224" data-name="Path 3224" d="M9,6h.5a2,2,0,0,1,1.983,1.738l3.11-1.382A1,1,0,0,1,16,7.269v7.462a1,1,0,0,1-1.406.913l-3.111-1.382A2,2,0,0,1,9.5,16H2a2,2,0,0,1-2-2V8A2,2,0,0,1,2,6Zm6,8.73V7.27L11.5,8.825v4.35L15,14.731ZM1,8v6a1,1,0,0,0,1,1H9.5a1,1,0,0,0,1-1V8a1,1,0,0,0-1-1H2A1,1,0,0,0,1,8Z"/>
+                              <path id="Path_3225" data-name="Path 3225" d="M9,6A3,3,0,1,0,6,3,3,3,0,0,0,9,6ZM7,3A2,2,0,1,1,9,5,2,2,0,0,1,7,3Z"/>
+                            </g>
+                          </svg>
+                    </div>
+                    <div class="Layout-TextHalaman">
+                        <div>Movies</div>
+                    </div>
                 </div>
-                <div class="Layout-TextHalaman">
-                    <div>Daftar Anime</div>
-                </div>
-            </div>
-            <!-- Halaman 3-->
-            <div class="Layout-Halaman Space-Halaman">
-                <div class="Layout-Icon-Halaman">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-calendar-date Icon-Halaman"
-                        viewBox="0 0 16 16">
-                        <path
-                            d="M6.445 11.688V6.354h-.633A12.6 12.6 0 0 0 4.5 7.16v.695c.375-.257.969-.62 1.258-.777h.012v4.61h.675zm1.188-1.305c.047.64.594 1.406 1.703 1.406 1.258 0 2-1.066 2-2.871 0-1.934-.781-2.668-1.953-2.668-.926 0-1.797.672-1.797 1.809 0 1.16.824 1.77 1.676 1.77.746 0 1.23-.376 1.383-.79h.027c-.004 1.316-.461 2.164-1.305 2.164-.664 0-1.008-.45-1.05-.82h-.684zm2.953-2.317c0 .696-.559 1.18-1.184 1.18-.601 0-1.144-.383-1.144-1.2 0-.823.582-1.21 1.168-1.21.633 0 1.16.398 1.16 1.23z" />
-                        <path
-                            d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
-                    </svg>
-                </div>
-                <div class="Layout-TextHalaman">
-                    <div>Jadwal Tayang</div>
-                </div>
-            </div>
-            <!-- Halaman 4-->
-            <div class="Layout-Halaman Space-Halaman">
-                <div class="Layout-Icon-Halaman">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="Icon-halaman" viewBox="0 0 16 16">
-                        <g id="cinema" transform="translate(0.005 -0.416)">
-                            <path id="Path_3218" data-name="Path 3218"
-                                d="M14.981,1.014,14.723.95a18,18,0,0,0-8.706,0l-.258.064a1.338,1.338,0,0,0-1.015,1.3V4.181A18.021,18.021,0,0,0,.919,5.759l-.234.129A1.336,1.336,0,0,0,.042,7.406l.78,2.917A8.312,8.312,0,0,0,6,15.978l.8.295a2.422,2.422,0,0,0,2.672-.718l.549-.656a8.159,8.159,0,0,0,1.245-2.017,2.389,2.389,0,0,0,.48-.252l.7-.491A8.318,8.318,0,0,0,16,5.332V2.315a1.338,1.338,0,0,0-1.014-1.3ZM9.618,14.554l-.549.656a1.884,1.884,0,0,1-2.079.558l-.8-.295a7.777,7.777,0,0,1-4.848-5.291L.559,7.267a.8.8,0,0,1,.385-.909l.234-.129a17.49,17.49,0,0,1,3.567-1.49v.593a8.317,8.317,0,0,0,2.849,6.261,5.061,5.061,0,0,1-1.475.355L4.1,12.111a.268.268,0,0,0-.089.512l2.67,1.206a1.339,1.339,0,0,0,1.641-.439l.584-.813.076.054a2.409,2.409,0,0,0,1.383.434c.08,0,.158-.01.237-.018a7.651,7.651,0,0,1-.989,1.508Zm-1.552-2.58c.073.054.144.112.22.164l.185.13-.581.809a.8.8,0,0,1-.985.263l-1.724-.777.98-.08a5.607,5.607,0,0,0,1.9-.507ZM15.46,5.332A7.781,7.781,0,0,1,12.146,11.7l-.7.491a1.881,1.881,0,0,1-2.151,0l-.7-.491A7.781,7.781,0,0,1,5.28,5.332V2.315a.8.8,0,0,1,.609-.78l.258-.065a17.462,17.462,0,0,1,8.446,0l.258.065a.8.8,0,0,1,.609.78Zm0,0"
-                                transform="translate(0)" />
-                            <path id="Path_3219" data-name="Path 3219"
-                                d="M202.855,120.352l.365-.392a2.145,2.145,0,0,0-3.031,0l-.013.013.392.366a1.606,1.606,0,0,1,2.287.013Zm0,0"
-                                transform="translate(-193.478 -114.932)" />
-                            <path id="Path_3220" data-name="Path 3220"
-                                d="M328.189,119.959l-.013.013.392.366a1.606,1.606,0,0,1,2.287.013l.365-.392A2.145,2.145,0,0,0,328.189,119.959Zm0,0"
-                                transform="translate(-317.191 -114.932)" />
-                            <path id="Path_3221" data-name="Path 3221"
-                                d="M72.242,248.643a1.606,1.606,0,0,1,1.238.171l.25-.475a2.142,2.142,0,0,0-2.927.785l-.009.016.232.134.241.117A1.6,1.6,0,0,1,72.242,248.643Zm0,0"
-                                transform="translate(-68.427 -239.339)" />
-                            <path id="Path_3222" data-name="Path 3222"
-                                d="M219.936,224.09l-1.988.362a5.071,5.071,0,0,1-1.822,0l-1.988-.362a.268.268,0,0,0-.218.471l2.268,1.856a1.343,1.343,0,0,0,1.7,0l2.268-1.857a.268.268,0,0,0-.218-.471ZM217.546,226a.8.8,0,0,1-1.018,0l-1.466-1.2.969.176a5.591,5.591,0,0,0,2.012,0l.969-.176Zm0,0"
-                                transform="translate(-206.668 -216.175)" />
-                        </g>
-                    </svg>
-
-                </div>
-                <div class="Layout-TextHalaman">
-                    <div>Genres</div>
-                </div>
-            </div>
-            <!-- Halaman 5-->
-            <div class="Layout-Halaman Space-Halaman">
-                <div class="Layout-Icon-Halaman">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="Icon-Halaman" viewBox="0 0 16 16">
-                        <g id="camera-reels" opacity="0.5">
-                            <path id="Path_3223" data-name="Path 3223"
-                                d="M6,3A3,3,0,1,1,3,0,3,3,0,0,1,6,3ZM1,3A2,2,0,1,0,3,1,2,2,0,0,0,1,3Z" />
-                            <path id="Path_3224" data-name="Path 3224"
-                                d="M9,6h.5a2,2,0,0,1,1.983,1.738l3.11-1.382A1,1,0,0,1,16,7.269v7.462a1,1,0,0,1-1.406.913l-3.111-1.382A2,2,0,0,1,9.5,16H2a2,2,0,0,1-2-2V8A2,2,0,0,1,2,6Zm6,8.73V7.27L11.5,8.825v4.35L15,14.731ZM1,8v6a1,1,0,0,0,1,1H9.5a1,1,0,0,0,1-1V8a1,1,0,0,0-1-1H2A1,1,0,0,0,1,8Z" />
-                            <path id="Path_3225" data-name="Path 3225"
-                                d="M9,6A3,3,0,1,0,6,3,3,3,0,0,0,9,6ZM7,3A2,2,0,1,1,9,5,2,2,0,0,1,7,3Z" />
-                        </g>
-                    </svg>
-                </div>
-                <div class="Layout-TextHalaman">
-                    <div>Movies</div>
+                <!-- Halaman 6-->
+                <div class="Layout-Halaman Space-Halaman">
+                    <div class="Layout-Icon-Halaman">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="Icon-Halaman" viewBox="0 0 16 12">
+                            <g id="mail" transform="translate(0 -9)" opacity="0.5">
+                              <path id="mail-2" data-name="mail" d="M0,0V12H16V0ZM8,8,2,2H14Z" transform="translate(0 9)" fill-rule="evenodd" opacity="0.5"/>
+                            </g>
+                          </svg>
+                    </div>
+                    <div class="Layout-TextHalaman">
+                        <div>Hubungi Kami</div>
+                    </div>
                 </div>
             </div>
-            <!-- Halaman 6-->
-            <div class="Layout-Halaman Space-Halaman">
-                <div class="Layout-Icon-Halaman">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="Icon-Halaman" viewBox="0 0 16 12">
-                        <g id="mail" transform="translate(0 -9)" opacity="0.5">
-                            <path id="mail-2" data-name="mail" d="M0,0V12H16V0ZM8,8,2,2H14Z" transform="translate(0 9)"
-                                fill-rule="evenodd" opacity="0.5" />
-                        </g>
-                    </svg>
-                </div>
-                <div class="Layout-TextHalaman">
-                    <div>Hubungi Kami</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <script src="../JS/HomePage.Js"></script>
-</body>
-
+        </section>
+        
+        <script src="../JS/HomePage.Js"></script>
+    </body>
 </html>
