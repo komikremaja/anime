@@ -70,12 +70,11 @@ body{
     text-align: center;
     padding-top: 0px;
     padding-bottom: 20px;
-    width: 70%;
-    height: 52%;
+    width: 72%;
 }
 
 .Logo-Gambar{
-    width: 24%;
+    height: 154%;
 }
 .Layout-Search{
        padding: 15px 0px;
@@ -112,7 +111,7 @@ body{
 .Layout-Icon-Search{
     display: inline;
     text-align: right;
-    width: 7%;
+    width: 11%;
     height: 38%;
     margin-top: 15px;
     border-radius: 10%;
