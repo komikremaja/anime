@@ -34,3 +34,15 @@ function searchClose(){
         OpenSearch=false;
     }
 }
+
+const slidebar = document.getElementById('slidebar');
+let SlideTransition = false;
+function slideTransition(){
+    if(SlideTransition === false){
+        slidebar.classList.add('SlideTransition');
+        SlideTransition = true;
+    }else{
+        slidebar.classList.remove('SlideTransition')
+        SlideTransition = false;
+    }
+}
